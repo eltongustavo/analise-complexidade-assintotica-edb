@@ -40,14 +40,14 @@ double time(function<void()> algoritmo, int repeticoes) {
 }
 
 int main() {
-    vector<int> tamanhos_busca = {1000, 5000, 10000, 50000, 100000}; //valores maiores para buscas
-    vector<int> tamanhos_sort = {100, 500, 1000, 2000, 5000}; //valores menores para ordenação
+    vector<int> tamanhos_busca = {10000, 20000, 40000}; //valores maiores para buscas
+    vector<int> tamanhos_sort = {100, 200, 400}; //valores menores para ordenação
     int repeticoes = 10;
 
     cout << "Iniciando bateria de testes empiricos...\n";
     cout << "------------------------------------------\n";
 
-    for (size_t i = 0; i < 4; ++i) {
+    for (size_t i = 0; i < 3; ++i) {
         int n_busca = tamanhos_busca[i];
         int n_sort = tamanhos_sort[i];
 
